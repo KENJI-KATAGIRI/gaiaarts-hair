@@ -1,0 +1,19 @@
+# 環境・秘密情報
+.env
+.env.*
+
+# Node
+node_modules/
+
+# データファイル
+*.jsonl
+*.json.bak
+
+# バックアップ
+*.bak
+*.bak_*
+
+# 一時ファイル
+.DS_Store
+*.tmp
+*.swp
