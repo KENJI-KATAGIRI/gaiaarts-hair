@@ -454,7 +454,6 @@ submitBtn.addEventListener('click', async () => {
 
   const body = JSON.stringify(payload);
   showSuccess();
-  try { navigator.sendBeacon(BOOKING_SCRIPT_URL, body); } catch (_) {}
   fetch(BOOKING_SCRIPT_URL, {
     method: 'POST', mode: 'no-cors',
     headers: { 'Content-Type': 'text/plain' },
