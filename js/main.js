@@ -454,9 +454,9 @@ submitBtn.addEventListener('click', async () => {
 
   const body = JSON.stringify(payload);
   showSuccess();
-  fetch(BOOKING_SCRIPT_URL, {
-    method: 'POST', mode: 'no-cors',
-    headers: { 'Content-Type': 'text/plain' },
+  fetch('/hair/api/book', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
     body,
   }).catch(() => {});
 });
